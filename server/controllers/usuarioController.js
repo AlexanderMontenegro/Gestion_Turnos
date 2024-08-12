@@ -1,5 +1,9 @@
 const Usuario = require('../models/usuario');
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+require('dotenv').config();
 
+// Obtener todos los usuarios
 const getUsuarios = async (req, res) => {
   try {
     const usuarios = await Usuario.getUsuarios();
@@ -9,6 +13,7 @@ const getUsuarios = async (req, res) => {
   }
 };
 
+// Obtener un usuario por ID
 const getUsuarioById = async (req, res) => {
   const { id } = req.params;
   try {
@@ -23,21 +28,64 @@ const getUsuarioById = async (req, res) => {
   }
 };
 
+// Crear un nuevo usuario
 const createUsuario = async (req, res) => {
-  const usuario = req.body;
+  const { nombre, email, password, rol, especialidad_id, consultorio_id } = req.body;
   try {
-    const nuevoUsuario = await Usuario.createUsuario(usuario);
+    const hashedPassword = await bcrypt.hash(password, 10);
+    const nuevoUsuario = await Usuario.createUsuario({
+      nombre,
+      email,
+      password: hashedPassword,
+      rol,
+      especialidad_id,
+      consultorio_id
+    });
     res.status(201).json(nuevoUsuario);
   } catch (err) {
     res.status(500).json({ error: 'Error al crear el usuario' });
   }
 };
 
-// Otros controladores (actualizar, eliminar) se agregarán aquí
+// Iniciar sesión
+const loginUsuario = async (req, res) => {
+  const { email, password } = req.body;
+  try {
+    const usuario = await Usuario.getUsuarioByEmail(email);
+    if (usuario && await bcrypt.compare(password, usuario.password)) {
+      const token = jwt.sign({ id: usuario.id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+      res.json({ token });
+    } else {
+      res.status(401).json({ error: 'Credenciales incorrectas' });
+    }
+  } catch (err) {
+    res.status(500).json({ error: 'Error al iniciar sesión' });
+  }
+};
+
+// Registrar un nuevo usuario
+const registerUsuario = async (req, res) => {
+  const { nombre, email, password, rol, especialidad_id, consultorio_id } = req.body;
+  try {
+    const hashedPassword = await bcrypt.hash(password, 10);
+    const nuevoUsuario = await Usuario.createUsuario({
+      nombre,
+      email,
+      password: hashedPassword,
+      rol,
+      especialidad_id,
+      consultorio_id
+    });
+    res.status(201).json(nuevoUsuario);
+  } catch (err) {
+    res.status(500).json({ error: 'Error al registrar el usuario' });
+  }
+};
 
 module.exports = {
   getUsuarios,
   getUsuarioById,
   createUsuario,
-  // Otros controladores se exportarán aquí
+  loginUsuario,
+  registerUsuario,
 };
