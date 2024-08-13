@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Visualization</title>
+    <style>
+        .container {
+            display: grid;
+            gap: 1px;
+            background-color: #444;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Login Layout</h2>
+    <div class="container" style="grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(6, 1fr);">
+        <div class="item" style="grid-area: 1 / 1 / 2 / 4;">Navbar</div>
+        <div class="item" style="grid-area: 2 / 1 / 6 / 2;">Login</div>
+        <div class="item" style="grid-area: 2 / 2 / 6 / 4;">Registro</div>
+        <div class="item" style="grid-area: 6 / 1 / 7 / 2;">Logo</div>
+        <div class="item" style="grid-area: 6 / 2 / 7 / 3;">Nosotros</div>
+        <div class="item" style="grid-area: 6 / 3 / 7 / 4;">Redes</div>
+    </div>
+
+    <h2>Home Layout</h2>
+    <div class="container" style="grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(6, 1fr);">
+        <div class="item" style="grid-area: 1 / 1 / 2 / 4;">Navbar</div>
+        <div class="item" style="grid-area: 2 / 1 / 3 / 2;">Notificaciones</div>
+        <div class="item" style="grid-area: 2 / 2 / 3 / 4;">Perfil</div>
+        <div class="item" style="grid-area: 3 / 1 / 4 / 4;">Servicios</div>
+        <div class="item" style="grid-area: 4 / 1 / 5 / 4;">Eventos</div>
+        <div class="item" style="grid-area: 5 / 1 / 6 / 4;">Publicidad</div>
+        <div class="item" style="grid-area: 6 / 1 / 7 / 2;">Logo</div>
+        <div class="item" style="grid-area: 6 / 2 / 7 / 3;">Nosotros</div>
+        <div class="item" style="grid-area: 6 / 3 / 7 / 4;">Redes</div>
+    </div>
+
+    <h2>Perfil Layout</h2>
+    <div class="container" style="grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(6, 1fr);">
+        <div class="item" style="grid-area: 1 / 1 / 2 / 4;">Navbar</div>
+        <div class="item" style="grid-area: 2 / 1 / 3 / 2;">Foto</div>
+        <div class="item" style="grid-area: 2 / 2 / 3 / 3;">Datos</div>
+        <div class="item" style="grid-area: 2 / 3 / 3 / 4;">Notificacion</div>
+        <div class="item" style="grid-area: 3 / 1 / 5 / 3;">Historial</div>
+        <div class="item" style="grid-area: 3 / 3 / 4 / 4;">Turnos</div>
+        <div class="item" style="grid-area: 4 / 3 / 5 / 4;">Pagos</div>
+        <div class="item" style="grid-area: 5 / 1 / 6 / 3;">Recetas</div>
+        <div class="item" style="grid-area: 5 / 3 / 6 / 4;">Eventos</div>
+        <div class="item" style="grid-area: 6 / 1 / 7 / 2;">Logo</div>
+        <div class="item" style="grid-area: 6 / 2 / 7 / 3;">Nosotros</div>
+        <div class="item" style="grid-area: 6 / 3 / 7 / 4;">Redes</div>
+    </div>
+
+    <h2>Servicios Médicos Layout</h2>
+    <div class="container" style="grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(6, 1fr);">
+        <div class="item" style="grid-area: 1 / 1 / 2 / 4;">Navbar</div>
+        <div class="item" style="grid-area: 2 / 1 / 6 / 4;">Filtro</div>
+        <div class="item" style="grid-area: 6 / 1 / 7 / 2;">Logo</div>
+        <div class="item" style="grid-area: 6 / 2 / 7 / 3;">Nosotros</div>
+        <div class="item" style="grid-area: 6 / 3 / 7 / 4;">Redes</div>
+    </div>
+
+    <h2>Planes Médicos Layout</h2>
+    <div class="container" style="grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(6, 1fr);">
+        <div class="item" style="grid-area: 1 / 1 / 2 / 4;">Navbar</div>
+        <div class="item" style="grid-area: 2 / 1 / 3 / 4;">Planes Médicos</div>
+        <div class="item" style="grid-area: 3 / 1 / 5 / 3;">Detalles</div>
+        <div class="item" style="grid-area: 3 / 3 / 5 / 4;">Costos</div>
+        <div class="item" style="grid-area: 5 / 1 / 6 / 3;">Beneficios</div>
+        <div class="item" style="grid-area: 5 / 3 / 6 / 4;">Plan Actual</div>
+        <div class="item" style="grid-area: 6 / 1 / 7 / 2;">Logo</div>
+        <div class="item" style="grid-area: 6 / 2 / 7 / 3;">Nosotros</div>
+        <div class="item" style="grid-area: 6 / 3 / 7 / 4;">Redes</div>
+    </div>
+
+    <h2>Pasarela de Pago Layout</h2>
+    <div class="container" style="grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(6, 1fr);">
+        <div class="item" style="grid-area: 1 / 1 / 2 / 4;">Navbar</div>
+        <div class="item" style="grid-area: 2 / 1 / 6 / 3;">Detalle</div>
+        <div class="item" style="grid-area: 2 / 3 / 3 / 4;">Plan Actual</div>
+        <div class="item" style="grid-area: 3 / 3 / 3 / 4;">Mercado Pago</div>
+        <div class="item" style="grid-area: 4 / 3 / 4 / 4;">Opciones de Pago</div>
+        <div class="item" style="grid-area: 5 / 3 / 6 / 4;">Costo Final</div>
+        <div class="item" style="grid-area: 6 / 1 / 7 / 2;">Logo</div>
+        <div class="item" style="grid-area: 6 / 2 / 7 / 3;">Nosotros</div>
+        <div class="item" style="grid-area: 6 / 3 / 7 / 4;">Redes</div>
+    </div>
+
+    <h2>Administrador Layout</h2>
+    <div class="container" style="grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(6, 1fr);">
+        <div class="item" style="grid-area: 1 / 1 / 2 / 4;">Navbar</div>
+        <div class="item" style="grid-area: 2 / 1 / 6 / 2;">Filtro Cliente/Medico/Productos</div>
+        <div class="item" style="grid-area: 2 / 2 / 6 / 4;">Resultados</div>
+        <div class="item" style="grid-area: 6 / 1 / 7 / 2;">Logo</div>
+        <div class="item" style="grid-area: 6 / 2 / 7 / 3;">Nosotros</div>
+        <div class="item" style="grid-area: 6 / 3 / 7 / 4;">Redes</div>
+    </div>
+
+</body>
+</html>

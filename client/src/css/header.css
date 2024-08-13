@@ -1,0 +1,33 @@
+/* Estilos para el header */
+header {
+    background-color: #282c34; 
+    padding: 1rem; 
+    color: white; 
+    text-align: center; 
+  }
+  
+  nav {
+    display: flex; 
+    justify-content: center; 
+    gap: 1rem; 
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none; 
+    font-size: 1rem;
+    padding: 0.5rem 1rem; 
+    border-radius: 4px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+  
+  nav a:hover {
+    background-color: #61dafb; 
+    color: #282c34;
+  }
+  
+  nav a.active {
+    font-weight: bold; 
+    background-color: #61dafb;
+    color: #282c34; 
+  }
+}

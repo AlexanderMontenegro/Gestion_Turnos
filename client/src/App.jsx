@@ -9,6 +9,7 @@ import Pagos from './pages/Pagos';
 import Admin from './pages/Admin';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Inicio from './pages/Inicio.jsx';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <main>
         <Routes>
+          <Route path="/inicio" element={<Inicio />} />
           <Route path="/" element={<Home />} />
           <Route path="/perfil" element={<Perfil />} />
           <Route path="/servicios" element={<Servicios />} />

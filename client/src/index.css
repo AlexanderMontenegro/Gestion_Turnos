@@ -24,15 +24,24 @@ a:hover {
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  flex-direction: column;
   min-height: 100vh;
+  overflow: hidden; /* Evita barras de desplazamiento no deseadas */
+}
+
+main {
+  flex: 1; /* Hace que el contenido principal tome el espacio restante */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: center; /* Alinea el texto en el centro */
 }
 
 button {
@@ -64,5 +73,16 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+/* Añade reglas adicionales para responsive design si es necesario */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  button {
+    font-size: 0.9em;
+    padding: 0.5em 1em;
   }
 }
