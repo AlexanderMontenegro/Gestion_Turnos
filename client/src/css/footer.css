@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   background-color: var(--gris);
-  color: var(--crema);
+  color: var(--azul);
   flex-direction: row;
   justify-content: space-evenly;
   list-style: none;

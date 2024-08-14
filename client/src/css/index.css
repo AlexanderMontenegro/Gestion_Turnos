@@ -1,4 +1,3 @@
-/* Variables y ajustes globales */
 :root {
   /* Tipografía */
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -12,10 +11,9 @@
   /* Colores globales */
   --blanco: #000814;
   --negro: #ffffff;
-  --gris: #55585e;
+  --gris: #55585e75;
   --azul: #001d3d;
-  --crema: #ffc300;
-  --amarillo: #ffd60a;
+  --amarillo: #ffc300;
 
   /* Esquema de colores */
   color-scheme: light dark;
