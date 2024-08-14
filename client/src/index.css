@@ -28,11 +28,11 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow: hidden; /* Evita barras de desplazamiento no deseadas */
+  overflow: hidden; 
 }
 
 main {
-  flex: 1; /* Hace que el contenido principal tome el espacio restante */
+  flex: 1; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +41,7 @@ main {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-  text-align: center; /* Alinea el texto en el centro */
+  text-align: center; 
 }
 
 button {
@@ -76,7 +76,7 @@ button:focus-visible {
   }
 }
 
-/* Añade reglas adicionales para responsive design si es necesario */
+
 @media (max-width: 768px) {
   h1 {
     font-size: 2em;

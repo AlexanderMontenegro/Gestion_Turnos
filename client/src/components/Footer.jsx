@@ -9,7 +9,7 @@ const Footer = () => {
         <a href="/homePage ">
           <img
             className="logo_img"
-            src="../../public/img/Logo.png"
+            src="/img/Logo.png"
           />
         </a>
       </div>
@@ -48,7 +48,7 @@ const Footer = () => {
             >
               <img
                 className="icono_redes"
-                src="../../public/iconos/facebook.png"
+                src="/iconos/facebook.png"
                 alt=""
               />
             </a>
@@ -62,7 +62,7 @@ const Footer = () => {
             >
               <img
                 className="icono_redes"
-                src="../../public/iconos/instagram.png"
+                src="/iconos/instagram.png"
                 alt=""
               />
             </a>
@@ -75,7 +75,7 @@ const Footer = () => {
             >
               <img
                 className="icono_redes"
-                src="../../public/iconos/whatsapp.png"
+                src="/iconos/whatsapp.png"
                 alt=""
               />
             </a>
@@ -90,7 +90,7 @@ const Footer = () => {
             >
               <img
                 className="icono_AGM"
-                src="../../public/iconos/AGMDesarrollO.png"
+                src="/iconos/AGMDesarrollO.png"
                 alt=""
               />
             </a>

@@ -1,4 +1,4 @@
-// client/src/pages/Login.jsx
+
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -11,8 +11,8 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('/api/usuarios/login', { email, password });
-      navigate('/'); // Redirige a la página principal o dashboard después del inicio de sesión
+      await axios.post('', { email, password });
+      navigate('/home'); 
     } catch (error) {
       console.error('Error durante el inicio de sesión', error);
     }
