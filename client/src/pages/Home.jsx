@@ -1,13 +1,16 @@
-import "../css/home.css"
+import Footer from "../components/Footer";
+
 
 const Home = () => {
-    return (
-      <div>
-        <h1>Bienvenido a Gestión de Turnos Médicos</h1>
-        <p>Accede a servicios médicos, planes médicos y más.</p>
+  return (
+    <div className="principal">
+      <div className="container">
+          <h1>Bienvenido a Gestión de Turnos Médicos</h1>
+          <p>Accede a servicios médicos, planes médicos y más.</p>
       </div>
-    );
-  };
-  
-  export default Home;
-  
+      <Footer />
+    </div>
+  );
+};
+
+export default Home;

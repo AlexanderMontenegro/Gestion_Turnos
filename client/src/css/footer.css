@@ -1,28 +1,23 @@
 .footer {
   display: flex;
-  background-color: var(--azulOscuro);
+  background-color: var(--gris);
   color: var(--crema);
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
   list-style: none;
   padding: 0;
-  align-content: stretch;
+  columns: 4;
+  height: 20rem;
+  align-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 
-.footer-column {
-  display: flex;
-  align-items: stretch;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0;
-}
+
 
 .footer-column h4 {
   margin-bottom: 10px;
   font-family: "Heebo", sans-serif;
-
   list-style: none;
   padding: 0;
 }
@@ -39,7 +34,7 @@
 }
 
 .footer-column ul li a {
-  color: var(--color-white);
+  color: var(--blanco);
   text-decoration: none;
   font-family: "Noto Sans", sans-serif;
   list-style: none;
@@ -117,6 +112,7 @@
 
 .icono_redes {
   width: 3rem;
+  padding: 5px;
 }
 
 .icono_AGM {

@@ -1,0 +1,127 @@
+/* Variables y ajustes globales */
+:root {
+  /* Tipografía */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Colores globales */
+  --blanco: #000814;
+  --negro: #ffffff;
+  --gris: #55585e;
+  --azul: #001d3d;
+  --crema: #ffc300;
+  --amarillo: #ffd60a;
+
+  /* Esquema de colores */
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+/* Ajustes de cuerpo */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden; 
+}
+
+/* Estilos de enlaces */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+/* Estilos de encabezados */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-align: center; 
+}
+
+/* Estilos de botones */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Estilos de la estructura principal */
+.principal {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Estilos del contenedor */
+.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(255, 255, 255, 0.8);
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos del main */
+main {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media queries */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  button {
+    font-size: 0.9em;
+    padding: 0.5em 1em;
+  }
+}

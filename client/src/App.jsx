@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import Footer from './components/Footer.jsx';
 import Home from './pages/Home';
 import Perfil from './pages/Perfil';
 import Servicios from './pages/Servicios';
@@ -28,7 +27,7 @@ function App() {
           <Route path="/register" element={<Register />} />
         </Routes>
       </main>
-      <Footer />
+    
     </Router>
   );
 }

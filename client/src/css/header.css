@@ -1,6 +1,6 @@
-/* Estilos para el header */
+
 header {
-    background-color: #282c34; 
+    background-color: var(--gris); 
     padding: 1rem; 
     color: white; 
     text-align: center; 

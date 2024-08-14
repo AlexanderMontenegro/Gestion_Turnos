@@ -12,7 +12,6 @@ function Header() {
         <Link to="/planes">Planes</Link>
         <Link to="/pagos">Pagos</Link>
         <Link to="/admin">Admin</Link>
-        
       </nav>
     </header>
     

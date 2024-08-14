@@ -1,4 +1,4 @@
-import React from "react";
+
 
 import "../css/footer.css";
 
@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-column">
-        <a href="/homePage ">
+        <a href="/ ">
           <img
             className="logo_img"
             src="/img/Logo.png"
@@ -14,11 +14,16 @@ const Footer = () => {
         </a>
       </div>
       <div className="nosotros">
-        <h4>Contactanos</h4>
+       {/* <h4>Contactanos</h4> */}
         <ul>
           <li>
             <a href="/contacto" target="_blank">
               Nosotros
+            </a>
+          </li>
+          <li>
+            <a href="/privacidad" target="_blank">
+              Política de Privacidad
             </a>
           </li>
           <li>
@@ -27,18 +32,14 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Nuestro proyecto
+              Novedades y Comunicados
             </a>
           </li>
-          <li>
-            <a href="/privacidad" target="_blank">
-              Política de Privacidad
-            </a>
-          </li>
+        
         </ul>
       </div>
       <div className="redes">
-        <h4>Redes Sociales</h4>
+        {/*<h4>Redes Sociales</h4>*/}
         <ul className="social-media">
           <li>
             <a
