@@ -1,0 +1,63 @@
+
+.container_perfil {
+    display: grid;
+    height: 100vh; 
+    grid-template-columns: 0.8fr 1.2fr 1fr;
+    grid-template-rows: 1.2fr 0.8fr 0.8fr 1.2fr 0.8fr 1.5fr;
+    gap: 1px;
+    grid-template-areas:
+        "Foto Datos Notificaciones"
+        "Historial Historial Historial"
+        "Historial Historial Historial"
+        "Recetas Recetas Recetas"
+        "Recetas Recetas Recetas"
+        "Turnos Eventos Pagos";
+}
+
+.Foto { 
+    grid-area: Foto;
+    background-color: var(--perfil); 
+}
+
+.Datos { 
+    grid-area: Datos;
+    background-color: var(--perfil); 
+}
+
+.Notificaciones { 
+    grid-area: Notificaciones;
+    background-color: var(--perfil); 
+}
+
+.Historial { 
+    grid-area: Historial;
+    background-color:var(--perfil); 
+}
+
+.Recetas { 
+    grid-area: Recetas;
+    background-color: var(--perfil); 
+}
+
+.Turnos { 
+    grid-area: Turnos;
+    background-color: var(--perfil); 
+}
+
+.Eventos { 
+    grid-area: Eventos;
+    background-color:var(--perfil); 
+}
+
+.Pagos { 
+    grid-area: Pagos;
+    background-color: var(--perfil); 
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}

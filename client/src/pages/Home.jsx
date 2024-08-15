@@ -1,12 +1,15 @@
 import Footer from "../components/Footer";
-
+import "../css/home.css";
 
 const Home = () => {
   return (
     <div className="principal">
-      <div className="container">
-          <h1>Bienvenido a Gestión de Turnos Médicos</h1>
-          <p>Accede a servicios médicos, planes médicos y más.</p>
+      <div className="container_home">
+        <div className="Notificaciones item">Notificaciones</div>
+        <div className="Perfil item">Perfil</div>
+        <div className="Servicios item">Servicios</div>
+        <div className="Eventos item">Eventos</div>
+        <div className="Publicidad item">Publicidad</div>
       </div>
       <Footer />
     </div>

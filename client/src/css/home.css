@@ -1,3 +1,47 @@
+.container_home {
+    display: grid;
+    height: 100vh; 
+    grid-template-columns: 0.8fr 1.2fr 1fr;
+    grid-template-rows: 1.2fr 0.8fr 0.8fr 1.2fr 0.8fr 1.5fr;
+    gap: 1px;
+    grid-template-areas:
+        "Notificaciones Perfil Servicios"
+        "Eventos Eventos Eventos"
+        "Eventos Eventos Eventos"
+        "Publicidad Publicidad Publicidad"
+        "Publicidad Publicidad Publicidad"
+        "Publicidad Publicidad Publicidad";
+}
 
+.Notificaciones { 
+    grid-area: Notificaciones;
+    background-color: var(--home); 
+}
 
+.Perfil { 
+    grid-area: Perfil;
+    background-color:var(--home); 
+}
 
+.Servicios { 
+    grid-area: Servicios;
+    background-color: var(--home); 
+}
+
+.Eventos { 
+    grid-area: Eventos;
+    background-color:var(--home); 
+}
+
+.Publicidad { 
+    grid-area: Publicidad;
+    background-color: var(--home); 
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}

@@ -15,6 +15,15 @@
   --azul: #001d3d;
   --amarillo: #ffc300;
 
+  /*pages*/
+  --inicio: red;
+  --home: blue;
+  --perfil: green;
+  --servicios: yellow;
+  --planes:orange;
+  --pagos:cyan;
+  --admin:magenta;
+
   /* Esquema de colores */
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
