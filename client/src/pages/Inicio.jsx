@@ -13,7 +13,7 @@ const Inicio = () => {
 
   return (
     <div className="principal">
-      <div className="container">
+      <div className="container_inicio">
         <div className="formContainer">
           {isLogin ? <Login /> : <Register />}
           <button className="toggleButton" onClick={toggleForm}>

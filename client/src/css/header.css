@@ -1,37 +1,38 @@
-
 header {
-   /* background-color: var(--gris); */
-    padding: 1rem; 
-    color: white; 
-    text-align: center; 
-  }
+  padding: 1rem;
+  color: var(--azul);
+  text-align: center;
+  background-color: var(--gris);
   
-  nav {
-    display: flex; 
-    justify-content: center; 
-    gap: 2rem; 
-    background-color: var(--gris);
-    box-shadow: 0 2px 4px var(--home);
-    width: 50%;
-    margin: auto;
-  }
+}
+
+nav {
+  display: flex; 
+  border-radius: 30px;
+  justify-content: center; 
+  gap: 5rem; 
+  background: var(--btn);
+  width: auto;
+  margin: auto;
   
-  nav a {
-    color: rgb(250, 5, 5);
-    text-decoration: none; 
-    font-size: 1rem;
-    padding: 0.5rem 1rem; 
-    border-radius: 4px; 
-    transition: background-color 0.3s ease, color 0.3s ease;
-  
-  nav a:hover {
-    background-color: #61dafb; 
-    color: #282c34;
-  }
-  
-  nav a.active {
-    font-weight: bold; 
-    background-color: #61dafb;
-    color: #282c34; 
-  }
+}
+nav a {
+  float: left;
+  display: block;
+  color:var(--blanco);
+  font-weight: 400;
+  transition: 0.2s;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 2.8rem;
+}
+nav a:hover {
+  color: var(--negro);
+  transition: 0.2s ;
+}
+
+nav a.active {
+  margin-right: 10px;
 }

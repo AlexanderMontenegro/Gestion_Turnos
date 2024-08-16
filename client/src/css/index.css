@@ -9,9 +9,9 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Colores globales */
-  --blanco: #000814;
-  --negro: #ffffff;
-  --gris: #55585e75;
+  --negro: #000814;
+  --blanco: #ffffff;
+  --gris: #77787a75;
   --azul: #001d3d;
   --amarillo: #ffc300;
 
@@ -23,11 +23,14 @@
   --planes:orange;
   --pagos:cyan;
   --admin:magenta;
+  --btn:linear-gradient(135deg, #007bff, #0056b3);
+  --fondo: linear-gradient(135deg, #f0f4f8, #d9e2ec);
 
   /* Esquema de colores */
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  
 }
 
 /* Ajustes de cuerpo */
@@ -81,25 +84,14 @@ button:focus-visible {
 .principal {
   display: flex;
   align-items: stretch;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
-  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  background: var(--fondo);
   flex-direction: column;
   justify-content: space-between;
 }
 
-/* Estilos del contenedor */
-.container {
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  background: rgba(255, 255, 255, 0.8);
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+
 
 .item {
   display: flex;
@@ -117,26 +109,4 @@ main {
   align-items: center;
 }
 
-/* Media queries */
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2em;
-  }
-  button {
-    font-size: 0.9em;
-    padding: 0.5em 1em;
-  }
-}
