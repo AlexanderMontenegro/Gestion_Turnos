@@ -6,8 +6,8 @@ import Servicios from './pages/Servicios';
 import Planes from './pages/Planes';
 import Pagos from './pages/Pagos';
 import Admin from './pages/Admin';
-import Login from './pages/Login';
-import Register from './pages/Register';
+import Login from './components/Login.jsx';
+import Register from './components/Register.jsx';
 import Inicio from './pages/Inicio.jsx';
 
 function App() {

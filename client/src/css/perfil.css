@@ -54,10 +54,3 @@
     background-color: var(--perfil); 
 }
 
-.item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    font-weight: bold;
-}

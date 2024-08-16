@@ -1,6 +1,6 @@
 
 header {
-    background-color: var(--gris); 
+   /* background-color: var(--gris); */
     padding: 1rem; 
     color: white; 
     text-align: center; 
@@ -9,11 +9,15 @@ header {
   nav {
     display: flex; 
     justify-content: center; 
-    gap: 1rem; 
+    gap: 2rem; 
+    background-color: var(--gris);
+    box-shadow: 0 2px 4px var(--home);
+    width: 50%;
+    margin: auto;
   }
   
   nav a {
-    color: white;
+    color: rgb(250, 5, 5);
     text-decoration: none; 
     font-size: 1rem;
     padding: 0.5rem 1rem; 

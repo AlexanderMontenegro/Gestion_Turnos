@@ -101,6 +101,14 @@ button:focus-visible {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 /* Estilos del main */
 main {
   flex: 1; 

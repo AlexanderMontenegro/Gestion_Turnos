@@ -1,0 +1,40 @@
+.container_planes {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.8fr 1.2fr 1fr;
+  grid-template-rows: 1.2fr 0.8fr 0.8fr 1.2fr 0.8fr 1.5fr;
+  gap: 1px;
+  grid-template-areas:
+    "Planes-Medicos Planes-Medicos Planes-Medicos"
+    "Planes-Medicos Planes-Medicos Planes-Medicos"
+    "Detalle Detalle Costos"
+    "Detalle Detalle Costos"
+    "Detalle Detalle Plan-ACtual"
+    "Beneficios Beneficios Plan-ACtual";
+}
+
+.Planes-Medicos {
+  grid-area: Planes-Medicos;
+  background-color: var(--planes);
+}
+
+.Detalle {
+  grid-area: Detalle;
+  background-color: var(--planes);
+}
+
+.Beneficios {
+  grid-area: Beneficios;
+  background-color: var(--planes);
+}
+
+.Costos {
+  grid-area: Costos;
+  background-color: var(--planes);
+}
+
+.Plan-ACtual {
+  grid-area: Plan-ACtual;
+  background-color: var(--planes);
+}
+

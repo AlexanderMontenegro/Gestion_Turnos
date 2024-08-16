@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+import "../css/perfil.css"
 const Perfil = () => {
   return (
     <div className="principal">
