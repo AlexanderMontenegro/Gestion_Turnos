@@ -11,9 +11,9 @@
   /* Colores globales */
   --negro: #000814;
   --blanco: #ffffff;
-  --gris: #77787a75;
+  --gris: #77787ada;
   --azul: #001d3d;
-  --amarillo: #ffc300;
+  --amarillo: #ffd800;
 
   /* Pages */
   --inicio: red;
@@ -30,7 +30,7 @@
 
   /* Esquema de colores */
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+
 }
 
 /* Ajustes de cuerpo */
@@ -41,10 +41,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overflow: hidden; 
-  background-image: url('/client/public/img/Fondo.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+ 
 }
 
 /* Estilos de enlaces */
@@ -92,7 +89,6 @@ button:focus-visible {
   width: 100vw;
   flex-direction: column;
   justify-content: space-between;
-  background: url('/client/public/img/Fondo.png');
 }
 
 .item {
@@ -109,4 +105,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("./img/Fondo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

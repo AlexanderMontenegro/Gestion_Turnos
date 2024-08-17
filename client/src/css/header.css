@@ -19,7 +19,7 @@ nav {
 nav a {
   float: left;
   display: block;
-  color:var(--blanco);
+  color:var(--amarillo);
   font-weight: 400;
   transition: 0.2s;
   text-align: center;

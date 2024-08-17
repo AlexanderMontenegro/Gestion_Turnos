@@ -15,7 +15,7 @@
     margin-bottom: 1.5rem;
     text-align: center;
   }
-  
+ 
   .input-group {
     margin-bottom: 1rem;
   }
@@ -36,7 +36,7 @@
   }
   
   .submit-btn {
-    width: 100%;
+    width: 97%;
     padding: 0.8rem;
     background: var(--btn);
     color: var(--blanco);

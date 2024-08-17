@@ -9,6 +9,7 @@ import Admin from './pages/Admin';
 import Login from './components/Login.jsx';
 import Register from './components/Register.jsx';
 import Inicio from './pages/Inicio.jsx';
+import './css/index.css'
 
 function App() {
   return (
