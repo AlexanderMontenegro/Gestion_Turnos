@@ -28,3 +28,39 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: var(--rojo);
 }
+
+
+.socialButtons {
+  margin-top: 20px;
+}
+
+.socialButton {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.socialButton.facebook {
+  background-color: #4267B2;
+  color: white;
+}
+
+.socialButton.google {
+  background-color: #DB4437;
+  color: white;
+}
+
+.socialButton.x {
+  background-color: #000000;
+  color: white;
+}
+
+.socialButton:hover {
+  opacity: 0.8;
+}
