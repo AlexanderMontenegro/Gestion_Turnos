@@ -15,22 +15,22 @@
   --azul: #001d3d;
   --amarillo: #ffc300;
 
-  /*pages*/
+  /* Pages */
   --inicio: red;
   --home: blue;
   --perfil: green;
   --servicios: yellow;
-  --planes:orange;
-  --pagos:cyan;
-  --admin:magenta;
-  --btn:linear-gradient(135deg, #007bff, #0056b3);
+  --planes: orange;
+  --pagos: cyan;
+  --admin: magenta;
+  --btn: linear-gradient(135deg, #007bff, #0056b3);
   --fondo: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  --deco: linear-gradient(135deg, #0580f3, #534949);
+  --deco2: linear-gradient(135deg, #534949, #0580f3);
 
   /* Esquema de colores */
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  
 }
 
 /* Ajustes de cuerpo */
@@ -41,6 +41,10 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overflow: hidden; 
+  background-image: url('/client/public/img/Fondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Estilos de enlaces */
@@ -86,12 +90,10 @@ button:focus-visible {
   align-items: stretch;
   height: 90vh;
   width: 100vw;
-  background: var(--fondo);
   flex-direction: column;
   justify-content: space-between;
+  background: url('/client/public/img/Fondo.png');
 }
-
-
 
 .item {
   display: flex;
@@ -108,5 +110,3 @@ main {
   justify-content: center;
   align-items: center;
 }
-
-

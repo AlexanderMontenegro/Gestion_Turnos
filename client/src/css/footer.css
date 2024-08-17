@@ -7,7 +7,8 @@
   list-style: none;
   padding: 0;
   columns: 4;
-  height: 20rem;
+  min-height: 13rem;
+  max-height: 15rem;
   align-content: space-around;
   align-items: stretch;
   flex-wrap: wrap;

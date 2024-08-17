@@ -13,8 +13,7 @@ const Inicio = () => {
 
   return (
     <div className="principal">
-      <div className="container_inicio">
-        <div className="formContainer">
+        <div  className="container_inicio">
           {isLogin ? <Login /> : <Register />}
           <button className="toggleButton" onClick={toggleForm}>
             {isLogin
@@ -22,7 +21,6 @@ const Inicio = () => {
               : "¿Ya tienes una cuenta? Inicia sesión"}
           </button>
         </div>
-      </div>
       <Footer />
     </div>
   );
