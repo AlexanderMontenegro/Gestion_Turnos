@@ -1,6 +1,6 @@
 :root {
   /* Tipografía */
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Passion One", sans-serif;
   font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,6 +14,8 @@
   --gris: #77787ada;
   --azul: #001d3d;
   --amarillo: #ffd800;
+  --rojo:#fb0505;
+
 
   /* Pages */
   --inicio: red;
