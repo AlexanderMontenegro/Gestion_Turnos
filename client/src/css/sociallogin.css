@@ -1,0 +1,35 @@
+
+
+.socialButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.socialButton {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.socialButton:hover {
+  background-color: #f0f0f0;
+}
+
+.socialButton.google {
+  color: #db4437;
+  border-color: #db4437;
+ 
+}
+
+.socialButton.facebook {
+  color: #4267b2;
+  border-color: #4267b2;
+}
+
+

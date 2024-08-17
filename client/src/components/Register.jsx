@@ -1,5 +1,7 @@
-
+// src/components/Register.jsx
 import React, { useState } from 'react';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebase';
 import '../css/Register.css';
 
 const Register = () => {
@@ -8,14 +10,18 @@ const Register = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (password !== confirmPassword) {
       alert('Las contraseñas no coinciden');
       return;
     }
-    // Aquí iría la lógica para enviar los datos de registro al servidor
-    console.log('Registrar usuario:', name, email, password);
+    try {
+      await createUserWithEmailAndPassword(auth, email, password);
+      console.log('Registro exitoso');
+    } catch (error) {
+      console.error('Error en el registro:', error);
+    }
   };
 
   return (

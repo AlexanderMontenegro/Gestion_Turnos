@@ -1,15 +1,21 @@
-
+// src/components/Login.jsx
 import React, { useState } from 'react';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebase';
 import '../css/Login.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Aquí iría la lógica para enviar los datos de inicio de sesión al servidor
-    console.log('Iniciar sesión con:', email, password);
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      console.log('Inicio de sesión exitoso');
+    } catch (error) {
+      console.error('Error en el inicio de sesión:', error);
+    }
   };
 
   return (

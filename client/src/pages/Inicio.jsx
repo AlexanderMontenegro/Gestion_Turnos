@@ -1,19 +1,16 @@
-import React, { useState } from "react";
-import Login from "../components/Login";
-import Register from "../components/Register";
-import "../css/inicio.css";
-import Footer from "../components/Footer";
+// src/pages/Inicio.jsx
+import React, { useState } from 'react';
+import Login from '../components/Login';
+import Register from '../components/Register';
+import SocialLogin from '../components/SocialLogin';
+import '../css/inicio.css';
+import Footer from '../components/Footer';
 
 const Inicio = () => {
   const [isLogin, setIsLogin] = useState(true);
 
   const toggleForm = () => {
     setIsLogin(!isLogin);
-  };
-
-  const handleSocialLogin = (platform) => {
-    console.log(`Iniciar sesión con ${platform}`);
-    // Aquí puedes agregar la lógica de autenticación para cada red social
   };
 
   return (
@@ -27,21 +24,7 @@ const Inicio = () => {
         </button>
 
         {/* Botones de redes sociales */}
-        <div className="socialButtons">
-          <button 
-            className="socialButton facebook" 
-            onClick={() => handleSocialLogin('Facebook')}
-          >
-            Iniciar sesión con Facebook
-          </button>
-          <button 
-            className="socialButton google" 
-            onClick={() => handleSocialLogin('Google')}
-          >
-            Iniciar sesión con Google
-          </button>
-        
-        </div>
+        <SocialLogin />
       </div>
       <Footer />
     </div>
