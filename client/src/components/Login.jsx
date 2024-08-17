@@ -14,7 +14,7 @@ const Login = () => {
       await signInWithEmailAndPassword(auth, email, password);
       console.log('Inicio de sesión exitoso');
     } catch (error) {
-      console.error('Error en el inicio de sesión:', error);
+      console.error('Error al iniciar sesión:', error.message);
     }
   };
 

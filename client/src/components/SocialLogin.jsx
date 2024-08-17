@@ -1,9 +1,8 @@
-
+// src/components/SocialLogin.jsx
 import React from 'react';
 import { signInWithPopup } from 'firebase/auth';
 import { googleProvider, facebookProvider, auth } from '../firebase';
-import '../css/sociallogin.css'; 
-
+import '../css/SocialLogin.css';
 
 const SocialLogin = () => {
   const handleGoogleLogin = async () => {
@@ -11,7 +10,7 @@ const SocialLogin = () => {
       await signInWithPopup(auth, googleProvider);
       console.log('Inicio de sesión con Google exitoso');
     } catch (error) {
-      console.error('Error en el inicio de sesión con Google:', error);
+      console.error('Error al iniciar sesión con Google:', error.message);
     }
   };
 
@@ -20,7 +19,7 @@ const SocialLogin = () => {
       await signInWithPopup(auth, facebookProvider);
       console.log('Inicio de sesión con Facebook exitoso');
     } catch (error) {
-      console.error('Error en el inicio de sesión con Facebook:', error);
+      console.error('Error al iniciar sesión con Facebook:', error.message);
     }
   };
 

@@ -7,8 +7,8 @@ const firebaseConfig = {
   authDomain: "turnosmedicos-f7235.firebaseapp.com",
   projectId: "turnosmedicos-f7235",
   storageBucket: "turnosmedicos-f7235.appspot.com",
-  messagingSenderId: "TU_MESSAGING_SENDER_ID", // Reemplaza con el valor correcto
-  appId: "TU_APP_ID" // Reemplaza con el valor correcto
+  messagingSenderId: "1064346770160",
+  appId: "1:1064346770160:web:4c6dba1c8dbe7d3dabc12c"
 };
 
 const app = initializeApp(firebaseConfig);

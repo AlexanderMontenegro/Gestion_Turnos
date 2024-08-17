@@ -18,9 +18,9 @@ const Register = () => {
     }
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      console.log('Registro exitoso');
+      console.log('Usuario registrado con éxito');
     } catch (error) {
-      console.error('Error en el registro:', error);
+      console.error('Error al registrar usuario:', error.message);
     }
   };
 
