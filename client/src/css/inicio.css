@@ -12,7 +12,7 @@
 .toggleButton {
   margin-top: 1rem;
   background: var(--btn);
-  color: var(--blanco);
+  color: var(--amarillo);
   border: none;
   padding: 0.8rem 1.5rem;
   border-radius: 25px;
@@ -20,9 +20,11 @@
   transition: all 0.3s ease;
   min-height: 30vh;
   max-height: 90vh;
+  font-size: 1.8rem;
 }
 
 .toggleButton:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: var(--rojo);
 }
