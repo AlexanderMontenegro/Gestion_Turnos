@@ -1,6 +1,5 @@
-// src/firebase.js
 import { initializeApp } from 'firebase/app';
-import { getAuth, GoogleAuthProvider, FacebookAuthProvider, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+import { getAuth, GoogleAuthProvider, FacebookAuthProvider } from 'firebase/auth';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAlVbB0X6ther8dapghNIiBGbmssCCdd-E",
@@ -8,7 +7,7 @@ const firebaseConfig = {
   projectId: "turnosmedicos-f7235",
   storageBucket: "turnosmedicos-f7235.appspot.com",
   messagingSenderId: "1064346770160",
-  appId: "1:1064346770160:web:4c6dba1c8dbe7d3dabc12c"
+  appId: "1:1064346770160:web:4d5a004f9ea4a31c00ad7b"
 };
 
 const app = initializeApp(firebaseConfig);
