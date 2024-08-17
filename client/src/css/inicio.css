@@ -30,9 +30,6 @@
 }
 
 
-.socialButtons {
-  margin-top: 20px;
-}
 
 .socialButton {
   background-color: #f5f5f5;
@@ -48,18 +45,24 @@
 
 .socialButton.facebook {
   background-color: #4267B2;
-  color: white;
+  color: var(--amarillo);
+  height: 10vh;
+}
+
+.socialButton.facebook:hover {
+  color: var(--negro);
 }
 
 .socialButton.google {
   background-color: #DB4437;
-  color: white;
+  color: var(--amarillo);
+  height: 10vh;
 }
 
-.socialButton.x {
-  background-color: #000000;
-  color: white;
+.socialButton.google:hover {
+  color: var(--negro);
 }
+
 
 .socialButton:hover {
   opacity: 0.8;

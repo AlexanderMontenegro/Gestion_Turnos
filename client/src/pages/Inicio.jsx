@@ -40,12 +40,7 @@ const Inicio = () => {
           >
             Iniciar sesión con Google
           </button>
-          <button 
-            className="socialButton x" 
-            onClick={() => handleSocialLogin('X')}
-          >
-            Iniciar sesión con X
-          </button>
+        
         </div>
       </div>
       <Footer />
