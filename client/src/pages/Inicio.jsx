@@ -1,5 +1,4 @@
-// src/pages/Inicio.jsx
-import React, { useState } from 'react';
+import  react, { useState } from 'react';
 import Login from '../components/Login';
 import Register from '../components/Register';
 import SocialLogin from '../components/SocialLogin';
